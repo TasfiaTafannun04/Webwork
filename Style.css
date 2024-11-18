@@ -21,3 +21,13 @@
  height: 200px ;
  width: 800px ;
 }
+
+.card{
+    width: 300px ;
+    background-color: azure ;
+}
+
+.card-img-top{
+    height: 250px ;
+    width: 170px ;
+}
