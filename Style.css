@@ -1,39 +1,40 @@
-#P1{
-    height: 560px ;
-    margin-bottom: 50px ;
+body {
+    background-color: #A9AFB8;
 }
-#Intro {
- width: 200px ;
- height: 200px ;
- position: relative;
- background-color: blue ;
- left: 0 ;
+
+#P1 {
+    height: 560px;
+    margin-bottom: 50px;
 }
 
 #intro {
- width: 500px ;
- height:100px ;
- position: absolute;
- background-color: blueviolet ;
- left: 100px ;
+    width: 400px;
+    height: 150px;
+    position: absolute;
+    background-color: #AEA7A1;
+    border: 3px solid black;
+    padding-left: 10px ;
+    padding-top: 10px ;
+    top: 10px ;
 }
 
 #col-8 {
- position: absolute;
- right: 0 ;
- height: 200px ;
- width: 800px ;
+    position: absolute;
+    right: 0;
+    height: 200px;
+    width: 800px;
 }
-.carousel-item img{
+
+.carousel-item img {
     border: 5px solid black;
 }
 
-.card{
-    width: 300px ;
-    background-color: azure ;
+.card {
+    width: 300px;
+    background-color: azure;
 }
 
-.card-img-top{
-    height: 250px ;
-    width: 170px ;
+.card-img-top {
+    height: 250px;
+    width: 170px;
 }
