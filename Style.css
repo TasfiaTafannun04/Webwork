@@ -12,8 +12,10 @@ body {
     height: 190px;
     position: absolute;
     background-color: #AEA7A1;
+    box-shadow: 5px 5px 10px #5c4f4b;
     color: #D3D4D2;
-    border: 3px solid black;
+    font-family: rivendell, candara, monospace;
+    border-radius: 5px;
     padding-left: 10px;
     padding-top: 10px;
     left: 65px;
@@ -23,13 +25,14 @@ body {
 #col-8 {
     position: absolute;
     right: 0;
-    height: 200px;
+    margin-top: 5px;
+    margin-right: 5px;
+    height: 570px;
     width: 800px;
+    border-radius: 5px;
+    border: 4px solid #5c4f4b;
 }
 
-.carousel-item img {
-    border: 5px solid black;
-}
 
 #booksintro {
     height: 100px;
