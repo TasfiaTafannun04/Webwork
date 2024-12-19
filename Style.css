@@ -20,6 +20,8 @@ body {
     border-radius: 5px;
     padding-left: 10px;
     padding-top: 10px;
+    transform: translateX(-100%);
+    transition: transform 3s ease-out;
     left: 65px;
     top: 180px;
 }
@@ -31,10 +33,11 @@ body {
     margin-right: 5px;
     height: 570px;
     width: 800px;
+    transform: translateX(100%);
+    transition: transform 3s ease-out;
     border-radius: 5px;
     border: 4px solid #5c4f4b;
 }
-
 
 #booksintro {
     height: 110px;
@@ -46,6 +49,7 @@ body {
 }
 
 #displaybook {
+    height: 600px;
     display: flex;
     justify-content: space-around;
 }
@@ -53,6 +57,31 @@ body {
 .card {
     width: 300px;
     background-color: azure;
+}
+
+#book1 {
+    transform: translateY(100%);
+    transition: transform 1s ease-out;
+    opacity: 0;
+}
+
+#book2 {
+    transform: translateY(100%);
+    transition: transform 2s ease-out;
+    opacity: 0;
+}
+
+#book3 {
+    transform: translateY(100%);
+    transition: transform 3s ease-out;
+    opacity: 0;
+}
+
+#book1.animate,
+#book2.animate,
+#book3.animate {
+    transform: translateY(0);
+    opacity: 1;
 }
 
 .card-img-top {
@@ -73,10 +102,6 @@ body {
     border: 5px solid black;
 }
 
-#gal1strow.animate {
-    transform: translateX(0);
-}
-
 #gal1strow {
     background-color: A9AFB8;
     margin-right: 50px;
@@ -86,14 +111,17 @@ body {
     transition: transform 4s ease-out;
 }
 
-#gal2ndrow.animate {
-    transform: translateX(0);
-}
-
 #gal2ndrow {
     background-color: A9AFB8;
     margin-left: 50px;
     margin-top: 5px;
     transform: translateX(100%);
     transition: transform 4s ease-out;
+}
+
+#col-8.animate,
+#intro.animate,
+#gal2ndrow.animate,
+#gal1strow.animate {
+    transform: translateX(0);
 }
