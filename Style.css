@@ -6,6 +6,8 @@ body {
 
 #P1 {
     height: 560px;
+    width: 80% ;
+    overflow: hidden;
     margin-bottom: 50px;
 }
 
@@ -52,6 +54,7 @@ body {
     height: 600px;
     display: flex;
     justify-content: space-around;
+    overflow: hidden;
 }
 
 .card {
@@ -60,21 +63,21 @@ body {
 }
 
 #book1 {
-    transform: translateY(100%);
-    transition: transform 1s ease-out;
     opacity: 0;
+    transform: translateY(100%);
+    transition: transform 1.5s ease-out, opacity 1.5s ease-out;   
 }
 
 #book2 {
-    transform: translateY(100%);
-    transition: transform 2s ease-out;
     opacity: 0;
+    transform: translateY(100%);
+    transition: transform 1.75s ease-out, opacity 1.75s ease-out;
 }
 
 #book3 {
-    transform: translateY(100%);
-    transition: transform 3s ease-out;
     opacity: 0;
+    transform: translateY(100%);
+    transition: transform 2s ease-out, opacity 2s ease-out;
 }
 
 #book1.animate,
@@ -96,6 +99,12 @@ body {
     text-align: center;
     color: #D3D4D2;
     background-color: #AEA7A1;
+}
+
+#galleryslides{
+    margin: 0 ;
+    overflow: hidden;
+    margin-bottom: 50px ;
 }
 
 .galleryimg {
