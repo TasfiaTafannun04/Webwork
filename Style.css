@@ -134,3 +134,50 @@ body {
 #gal1strow.animate {
     transform: translateX(0);
 }
+
+.Honerable_Mentions{
+    display: flex ;
+    justify-content: space-around;
+}
+
+
+.flip_parent {
+    background-color: transparent;
+    width: 180px;
+    height: 300px;
+
+    perspective: 1000px;
+}
+
+.flip_imagesinner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip_parent:hover .flip_imagesinner {
+    transform: rotateY(180deg);
+}
+
+.flip_imagesfront,
+.flip_imagesback {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    backface-visibility: hidden;
+}
+
+.flip_imagesfront {
+    background-color: transparent;
+    color: black;
+}
+
+.flip_imagesback {
+    background-color: #555;
+    color: white;
+    transform: rotateY(180deg);
+}
