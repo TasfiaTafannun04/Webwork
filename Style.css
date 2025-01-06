@@ -135,11 +135,25 @@ body {
     transform: translateX(0);
 }
 
+#hmstart{
+    height: 110px;
+    margin: 30px;
+    padding-top: 10px;
+    text-align: center;
+    color: #D3D4D2;
+    background-color: #AEA7A1;
+}
+
 .Honerable_Mentions{
+    padding-top: 30px ;
     display: flex ;
     justify-content: space-around;
 }
 
+#HM2{
+    width: 50% ;
+    margin: 0 auto ;
+}
 
 .flip_parent {
     background-color: transparent;
@@ -180,4 +194,8 @@ body {
     background-color: #555;
     color: white;
     transform: rotateY(180deg);
+}
+
+.memento, .flip_imagesback{
+    border-radius: 10px ;
 }
