@@ -63,3 +63,14 @@ document.addEventListener('scroll', () => {
         book3.classList.add('animate');
     }
 });
+
+document.addEventListener('scroll', () => {
+    const momento = document.querySelectorAll('.momento');
+    const momentoheight = window.innerHeight;
+    momento.forEach(image => {
+        const momentopos = image.getBoundingClientRect().top;
+    if (momentopos < momentoheight) {
+        image.classList.add('animate');
+    }
+    });
+});

@@ -196,6 +196,17 @@ body {
     transform: rotateY(180deg);
 }
 
-.memento, .flip_imagesback{
+.momento, .flip_imagesback{
     border-radius: 10px ;
+}
+
+.momento{
+    opacity: 0 ;
+    transition: transform 1s ease-out, opacity 1s ease-out ;
+    transform: translateY(20) ;
+}
+
+.momento.animate{
+    transform: translate(0);
+    opacity: 1 ;
 }
