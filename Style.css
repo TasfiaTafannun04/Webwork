@@ -44,10 +44,13 @@ body {
 #booksintro {
     height: 110px;
     margin: 30px;
-    padding-top: 10px;
-    text-align: center;
-    color: #D3D4D2;
+    display: flex ;
+    justify-content: space-around;
     background-color: #AEA7A1;
+}
+
+.sublinebi{
+   padding-top: 50px ;
 }
 
 #displaybook {
@@ -211,7 +214,7 @@ body {
 
 .flip_imagesback {
     background-color: #555;
-    width: 210px ;
+    width: 210px;
     color: white;
     transform: rotateY(180deg);
 }
