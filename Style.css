@@ -1,6 +1,6 @@
 body {
-    background-color: #8F96A3;
-    color: #D3D4D2;
+    background-color: #e4e3e3;
+    color: #000000;
     font-family: rivendell, candara, monospace;
 }
 
@@ -15,9 +15,9 @@ body {
     width: 400px;
     height: 190px;
     position: absolute;
-    background-color: #AEA7A1;
-    box-shadow: 5px 5px 10px #5c4f4b;
-    color: #D3D4D2;
+    background-color: #b8b8b87c;
+    box-shadow: -5px 5px 10px #303030;
+    color: black;
     font-family: rivendell, candara, monospace;
     border-radius: 5px;
     padding-left: 10px;
@@ -38,19 +38,20 @@ body {
     transform: translateX(100%);
     transition: transform 3s ease-out;
     border-radius: 5px;
-    border: 4px solid #5c4f4b;
+    border: 4px solid black;
 }
 
-#booksintro {
+#HIntro {
     height: 110px;
     margin: 30px;
-    display: flex ;
+    display: flex;
+    padding-top: 7px;
     justify-content: space-around;
-    background-color: #AEA7A1;
+    text-shadow: -3px 3px 5px rgb(58, 58, 58);
 }
 
-.sublinebi{
-   padding-top: 50px ;
+.sublinebi {
+    padding-top: 30px;
 }
 
 #displaybook {
@@ -62,7 +63,7 @@ body {
 
 .card {
     width: 300px;
-    background-color: azure;
+    background-color: #b8b8b87c;
 }
 
 #book1 {
@@ -95,13 +96,12 @@ body {
     width: 170px;
 }
 
-#galleryintro {
+#galleryintro,
+#bookintro {
     height: 100px;
     margin: 30px;
-    padding-top: 10px;
-    text-align: center;
-    color: #D3D4D2;
-    background-color: #AEA7A1;
+    color: black;
+    background-color: #b8b8b87c;
 }
 
 #galleryslides {
@@ -115,7 +115,7 @@ body {
 }
 
 #gal1strow {
-    background-color: A9AFB8;
+    background-color: #b8b8b87c;
     margin-right: 50px;
     display: flex;
     justify-content: end;
@@ -124,7 +124,7 @@ body {
 }
 
 #gal2ndrow {
-    background-color: A9AFB8;
+    background-color: #b8b8b87c;
     margin-left: 50px;
     margin-top: 5px;
     transform: translateX(100%);
@@ -141,10 +141,9 @@ body {
 #hmstart {
     height: 110px;
     margin: 30px;
-    padding-top: 10px;
-    text-align: center;
-    color: #D3D4D2;
-    background-color: #AEA7A1;
+
+    color: black;
+    background-color: #b8b8b87c;
 }
 
 .Honerable_Mentions {
@@ -163,10 +162,8 @@ body {
 #dccistart {
     height: 110px;
     margin: 100px 30px 30px 30px;
-    padding-top: 10px;
-    text-align: center;
-    color: #D3D4D2;
-    background-color: #AEA7A1;
+    color: black;
+    background-color: #b8b8b87c;
 }
 
 .Sponserer,
@@ -213,9 +210,9 @@ body {
 }
 
 .flip_imagesback {
-    background-color: #555;
+    background-color: #b8b8b87c;
     width: 210px;
-    color: white;
+    color: black;
     transform: rotateY(180deg);
 }
 
@@ -233,4 +230,21 @@ body {
 .momento.animate {
     transform: translate(0);
     opacity: 1;
+}
+
+.Wiki{
+    margin-top: 50px ;
+    padding: 20px ;
+    background-color: #b8b8b87c;
+    display: flex;
+}
+
+.recentimg{
+    margin-right: 50px ;
+    border: 2px solid #000000;
+    border-radius: 20px ;
+}
+
+#wikiinfo{
+    padding-top: 20px ; 
 }
