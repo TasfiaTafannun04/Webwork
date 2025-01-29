@@ -69,8 +69,21 @@ document.addEventListener('scroll', () => {
     const momentoheight = window.innerHeight;
     momento.forEach(image => {
         const momentopos = image.getBoundingClientRect().top;
-    if (momentopos < momentoheight) {
-        image.classList.add('animate');
-    }
+        if (momentopos < momentoheight) {
+            image.classList.add('animate');
+        }
     });
 });
+
+var audio = document.getElementById("myAudio");
+var vbtn = document.getElementById("btn");
+vbtn.addEventListener('hover', () => {
+    if (audio.muted) {
+        audio.muted = false;
+        vbtn.style.backgroundImage = "url('asset/Volumeicon.png')"
+    }
+    else {
+        audio.muted = true;
+        vbtn.style.backgroundImage = "url('asset/Volumeiconmuted.png')"
+    }
+})
