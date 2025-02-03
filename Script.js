@@ -77,7 +77,8 @@ document.addEventListener('scroll', () => {
 
 var audio = document.getElementById("myAudio");
 var vbtn = document.getElementById("btn");
-vbtn.addEventListener('hover', () => {
+var volume1 = document.getElementById("volumeadj");
+vbtn.addEventListener('mousehover', () => {
     if (audio.muted) {
         audio.muted = false;
         vbtn.style.backgroundImage = "url('asset/Volumeicon.png')"
@@ -86,4 +87,8 @@ vbtn.addEventListener('hover', () => {
         audio.muted = true;
         vbtn.style.backgroundImage = "url('asset/Volumeiconmuted.png')"
     }
-})
+});
+
+volume1.addEventListener("input", () => {
+    audio.volume = volume1.value;
+});
