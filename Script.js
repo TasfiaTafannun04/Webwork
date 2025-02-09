@@ -78,15 +78,17 @@ document.addEventListener('scroll', () => {
 var audio = document.getElementById("myAudio");
 var vbtn = document.getElementById("btn");
 var volume1 = document.getElementById("volumeadj");
-vbtn.addEventListener('mousehover', () => {
-    if (audio.muted) {
-        audio.muted = false;
-        vbtn.style.backgroundImage = "url('asset/Volumeicon.png')"
-    }
-    else {
-        audio.muted = true;
-        vbtn.style.backgroundImage = "url('asset/Volumeiconmuted.png')"
-    }
+document.addEventListener("DOMContentLoaded", () => {
+    vbtn.addEventListener("click", () => {
+        if (audio.muted) {
+            audio.muted = false;
+            vbtn.id = "btnm";
+        }
+        else {
+            audio.muted = true;
+            vbtn.id = "btn";
+        }
+    });
 });
 
 volume1.addEventListener("input", () => {

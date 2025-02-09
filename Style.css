@@ -232,46 +232,64 @@ body {
     opacity: 1;
 }
 
-.Wiki{
-    margin-top: 50px ;
-    padding: 20px ;
+.Wiki {
+    margin-top: 50px;
+    padding: 20px;
     background-color: #b8b8b87c;
     display: flex;
 }
 
-.recentimg{
-    margin-right: 50px ;
+.recentimg {
+    margin-right: 50px;
     border: 2px solid #000000;
-    border-radius: 20px ;
+    border-radius: 20px;
 }
 
-#wikiinfo{
-    padding-top: 20px ; 
+#wikiinfo {
+    padding-top: 20px;
 }
 
-#audiobutton{
-    height: 50px ;
-    width: 150px ;
+#audiobutton {
+    height: 50px;
+    width: 50px;
     position: fixed;
-    top: 20px ;
-    left: 20px ;
+    top: 20px;
+    left: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgba(255, 255, 255, 0.781);
-    border-radius: 50px ;
+    border-radius: 50px;
+}
+#audiobutton:hover{
+    width: 150px ;
 }
 
-#btn{
+#audiobutton:hover #volumeadj {
+    width: 100px;
+    display: block;
+}
+
+#btn {
     height: 40px;
-    width: 40px ;
-    background-image: url("asset/Volumeicon.png") ;
+    width: 40px;
+    background-image: url("asset/Volumeicon.png");
     background-size: cover;
     border: 0;
-    border-radius: 100% ;
+    border-radius: 100%;
 }
 
-#volumeadj{
-    width: 100px ;
-    height: 5px ;
+#btnm {
+    height: 40px;
+    width: 40px;
+    background-image: url("asset/Volumeiconmuted.png");
+    background-size: cover;
+    border: 0;
+    border-radius: 100%;
+}
+
+#volumeadj {
+    display: none;
+    width: 50px;
+    height: 5px;
 }
