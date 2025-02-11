@@ -75,22 +75,41 @@ document.addEventListener('scroll', () => {
     });
 });
 
-var audio = document.getElementById("myAudio");
-var vbtn = document.getElementById("btn");
-var volume1 = document.getElementById("volumeadj");
+// var audio = document.getElementById("myAudio");
+// var vbtn = document.getElementById("btn");
+// document.addEventListener("DOMContentLoaded", () => {
+//     vbtn.addEventListener("click", () => {
+//         if (audio.muted) {
+//             audio.muted = false;
+//             vbtn.id = "btnm";
+//         }
+//         else {
+//             audio.muted = true;
+//             vbtn.id = "btn";
+//         }
+//     });
+// });
+
 document.addEventListener("DOMContentLoaded", () => {
+
+    var volume1 = document.getElementById("volumeadj");
+
+    var audio = document.getElementById("myAudio");
+
+    var vbtn = document.getElementById("btn");
+
     vbtn.addEventListener("click", () => {
-        if (audio.muted) {
-            audio.muted = false;
-            vbtn.id = "btnm";
-        }
-        else {
-            audio.muted = true;
-            vbtn.id = "btn";
-        }
+
+        audio.muted = !audio.muted; // Toggle mute state
+
+        vbtn.classList.toggle("muted"); // Toggle class to change background image
+
+        console.log("Audio Muted:", audio.muted); // Debugging
+
+    });
+
+    volume1.addEventListener("input", () => {
+        audio.volume = volume1.value;
     });
 });
 
-volume1.addEventListener("input", () => {
-    audio.volume = volume1.value;
-});

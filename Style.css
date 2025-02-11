@@ -261,8 +261,9 @@ body {
     background-color: rgba(255, 255, 255, 0.781);
     border-radius: 50px;
 }
-#audiobutton:hover{
-    width: 150px ;
+
+#audiobutton:hover {
+    width: 150px;
 }
 
 #audiobutton:hover #volumeadj {
@@ -270,7 +271,7 @@ body {
     display: block;
 }
 
-#btn {
+/* #btn {
     height: 40px;
     width: 40px;
     background-image: url("asset/Volumeicon.png");
@@ -286,6 +287,30 @@ body {
     background-size: cover;
     border: 0;
     border-radius: 100%;
+} */
+
+#btn {
+
+    height: 40px;
+
+    width: 40px;
+
+    background-image: url("asset/Volumeicon.png");
+
+    background-size: cover;
+
+    border: 0;
+
+    border-radius: 100%;
+
+    transition: background-image 0.3s ease-in-out;
+
+}
+
+#btn.muted {
+
+    background-image: url("asset/Volumeiconmuted.png");
+
 }
 
 #volumeadj {
