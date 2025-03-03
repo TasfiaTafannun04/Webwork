@@ -98,6 +98,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
     var vbtn = document.getElementById("btn");
 
+    window.addEventListener("beforeunload", () => {
+
+        localStorage.setItem("audioPlaying", !audio.paused);
+
+    });
+
+    document.body.addEventListener("click", () => {
+
+        if (audio.paused) {
+
+            audio.play();
+
+        }
+
+    }, { once: true });
+
     vbtn.addEventListener("click", () => {
 
         audio.muted = !audio.muted; // Toggle mute state
