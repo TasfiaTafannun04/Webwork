@@ -129,3 +129,18 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+function playAudio() {
+    if (audio.paused) {
+        audio.play();
+    }
+    // Remove all event listeners after the first interaction
+    document.removeEventListener("scroll", playAudio);
+    document.removeEventListener("mousemove", playAudio);
+    document.removeEventListener("keydown", playAudio);
+    document.removeEventListener("click", playAudio);
+}
+
+document.addEventListener("scroll", playAudio, { once: true });
+document.addEventListener("mousemove", playAudio, { once: true });
+document.addEventListener("keydown", playAudio, { once: true });
+document.addEventListener("click", playAudio, { once: true });
